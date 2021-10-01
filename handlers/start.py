@@ -16,7 +16,9 @@ async def start(_, message: Message):
             ],[
             InlineKeyboardButton("💬 Group", url="https://t.me/AwesomeSupport"),
             InlineKeyboardButton("Channel", url="https://t.me/LaylaList")
-            ]]
+            ],[
+            InlineKeyboardButton("📚 Commands", callback_data="cbcmds")
+            ]
         ),
         disable_web_page_preview=True
     )
