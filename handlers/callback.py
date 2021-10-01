@@ -67,7 +67,7 @@ async def cbstart(_, query: CallbackQuery):
             [ 
                 [
                     InlineKeyboardButton(
-                        "➕ Add me to your Group ➕", url=f"https://t.me/{BOT_USERNAME}?startgroup=true")
+                        "➕ Add me to your Group ➕", url=f"https://t.me/ALMusicBot?startgroup=true")
                 ],[
                     InlineKeyboardButton(
                          "📚 Commands", callback_data="cbcmds")
