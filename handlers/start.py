@@ -1,16 +1,17 @@
 from pyrogram import Client, filters
 from pyrogram.types import Message, InlineKeyboardMarkup, InlineKeyboardButton
-import config
+import config import BOT_USERNAME
+from pyrogram.types import Message, InlineKeyboardMarkup, InlineKeyboardButton, Chat, CallbackQuery
 
 
 
-@Client.on_message(filters.command(["start", "start@ALMusicBot"]) & filters.private & ~filters.channel)
+@Client.on_message(command(["start", f"start@{BOT_USERNAME}"]) & filters.private & ~filters.edited)
 async def start(_, message: Message):
     await message.reply_text(
-        text="**Hello 👋🏻 {}!**\n\nI **Can Play Music In Voice Chats of Telegram Groups.**I Have A **lot of cool feature that will amaze You!**\n\n**Click /cmdlist For More Help On My Usage ❤**".format(message.from_user.mention),
+        text="**Hello 👋🏻 {}!**\n\nI **Can Play Music In Voice Chats of Telegram Groups.**I Have A **lot of cool feature that will amaze You!**\n\n**Click /help For More Help On My Usage ❤**".format(message.from_user.mention),
         reply_markup=InlineKeyboardMarkup(
             [[
-            InlineKeyboardButton("➕ Add To Your Group ➕", url=f"https://t.me/ALMusicBot?startgroup=true")
+            InlineKeyboardButton("➕ Add To Your Group ➕", url=f"https://t.me/{BOT_USERNAME}?startgroup=true")
             ],[
             InlineKeyboardButton("💬 Group", url="https://t.me/AwesomeSupport"),
             InlineKeyboardButton("Channel", url="https://t.me/LaylaList")
@@ -19,19 +20,23 @@ async def start(_, message: Message):
         disable_web_page_preview=True
     )
         
-@Client.on_message(filters.command(["start", "start@ALMusicBot"]) & ~filters.private & ~filters.channel)
+@Client.on_message(command(["start", f"start@{BOT_USERNAME}"]) & filters.group & ~filters.edited)
 async def gstart(_, message: Message):
     await message.reply_text(
         text="**Music Bot Is Online ✅**",
         reply_markup=InlineKeyboardMarkup(
             [[
-            InlineKeyboardButton(text="🎙️ Support Group 🎙️", url="https://t.me/AwesomeSupport")
+            InlineKeyboardButton(text="🎙️ Support Group 🎙️", url="https://t.me/AwesomeSupport"),
+            InlineKeyboardButton(text="📣 Channel", url=f"https://t.me/LaylaList")
+            ],
+            [
+            
             ]]
         )
     )
 
 
-@Client.on_message(filters.command(["cmdlist", "start@ALMusicBot"]) & filters.private & ~filters.channel)
+@Client.on_message(command(["help", f"help@{BOT_USERNAME}"]) & filters.group & ~filters.edited)
 async def cmdlist(_, message: Message):
     await message.reply_text(
         text="""**Group Music Bot : Help Menu**
