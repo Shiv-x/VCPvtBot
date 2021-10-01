@@ -6,7 +6,7 @@ from pyrogram.types import Message, InlineKeyboardMarkup, InlineKeyboardButton, 
 
 
 
-@Client.on_message(filters.command(["start", f"start@{BOT_USERNAME}"]) & filters.private & ~filters.edited)
+@Client.on_message(filters.command(["start", f"start@{BOT_USERNAME}"]) & filters.private & ~filters.channel)
 async def start(_, message: Message):
     await message.reply_text(
         text="**Hello 👋🏻 {}!**\n\nI **Can Play Music In Voice Chats of Telegram Groups.**I Have A **lot of cool feature that will amaze You!**\n\n**Click /help For More Help On My Usage ❤**".format(message.from_user.mention),
@@ -21,7 +21,7 @@ async def start(_, message: Message):
         disable_web_page_preview=True
     )
         
-@Client.on_message(filters.command(["start", f"start@{BOT_USERNAME}"]) & filters.group & ~filters.edited)
+@Client.on_message(filters.command(["start", f"start@{BOT_USERNAME}"]) & filters.group & ~filters.channel)
 async def gstart(_, message: Message):
     await message.reply_text(
         text="**Music Bot Is Online ✅**",
@@ -37,7 +37,7 @@ async def gstart(_, message: Message):
     )
 
 
-@Client.on_message(filters.command(["help", f"help@{BOT_USERNAME}"]) & filters.group & ~filters.edited)
+@Client.on_message(filters.command(["help", f"help@{BOT_USERNAME}"]) & filters.private & ~filters.channel)
 async def cmdlist(_, message: Message):
     await message.reply_text(
         text="""**Group Music Bot : Help Menu**
