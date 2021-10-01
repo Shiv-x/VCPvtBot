@@ -42,7 +42,7 @@ async def gstart(_, message: Message):
 @Client.on_message(filters.command(["help", f"help@{BOT_USERNAME}"]) & filters.private & ~filters.channel)
 async def cmdlist(_, message: Message):
     await message.reply_text(
-        text="""**Group Music Bot : Help Menu**
+        text=f"""<b>✨ **Welcome user, i'm {query.message.from_user.mention}** \n
 
 __× First Add Me To Your Group..
 × Promote Me As Admin In Your Group With All Permission..__
@@ -69,10 +69,14 @@ __× First Add Me To Your Group..
 • `/end` : __Stops playing Music__
 • `/reload` : __Reloads Admin List__
 • `/userbotjoin` : __Assistant Joins The Group__
-• `/userbotleave` : __Assistant Leaves From The Group.__""",
+• `/userbotleave` : __Assistant Leaves From The Group.__
+</b>""",
         reply_markup=InlineKeyboardMarkup(
               [[
-              InlineKeyboardButton(text="🎙️ Support Group 🎙️", url="https://t.me/AwesomeSupport")
+              InlineKeyboardButton(text="🎙️ Support Group 🎙️", url="https://t.me/AwesomeSupport"),
+              InlineKeyboardButton(text="📣 Channel", url=f"https://t.me/LaylaList")
+              ],[
+              InlineKeyboardButton("🏡 BACK TO HOME", callback_data="cbstart")
               ]]
           )
       )
