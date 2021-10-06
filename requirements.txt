@@ -15,3 +15,4 @@ pillow
 future
 psutil
 wget
+node
