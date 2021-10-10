@@ -2,20 +2,10 @@
 
 **A bot that can play music on telegram group's voice call.Telegram bot + userbot for streaming audio in group calls.**
 
-<p align="center">
-  <a href="https://github.com/QueenArzoo/GroupMusicBot">
-     <img height="30px" src="https://img.shields.io/badge/TG%20Music%20Bot-black?style=for-the-badge&logo=github">
-  </a>
-</p>
+[![Ask Me Anything !](https://img.shields.io/badge/🤔%20Ask%20me-anything-1abc9c.svg)](https://telegram.dog/LaylaList)
+[![Report Bugs!](https://badgen.net/badge/🐞%20Report%20/Bugs/red)](https://t.me/AwesomeSupport)
+[![Support !](https://badgen.net/badge/Support%20/Group/blue)](https://telegram.dog/AwesomeSupport)
 
-[![Ask Me Anything !](https://img.shields.io/badge/🤔%20Ask%20me-anything-1abc9c.svg)](https://telegram.dog/BotMusics)
-[![Report Bugs!](https://badgen.net/badge/🐞%20Report%20/Bugs/red)](https://t.me/BotMusics)
-[![Support !](https://badgen.net/badge/Support%20/Group/blue)](https://telegram.dog/BotMusics)
-
-
-<p align="center">
-<a href="https://github.com/TG-MUSICS/Telegram_VC_Bot/commits/"> <img src="https://img.shields.io/github/last-commit/TG-MUSICS/TELEGRAM_VC_BOT?color=white&logo=github&logoColor=dark&style=for-the-badge" /></a>
-</p>
 
 ### Features✨
 
@@ -56,21 +46,21 @@
 - `/reload` - **Refresh admin list**
 
 <details>
-  <summary>Telegram VC Bot</summary>
+  <summary>VCPvtBot</summary>
 
 ```
 Please fork this repository don't import code
 Made with Python3
-(C) @TG-Musics
+(C) @VCPvtBot
 Copyright permission under GNU General Public License v3.0
-License -> https://github.com/TG-Musics/TG-VCBOT/blob/main/LICENSE
+License -> https://github.com/QueenArzoo/VCPvtBot/blob/main/LICENSE
 ```
 </details>
 
 ### Deploy To Heroku 📡</h4>
 
 <p align="left">
-  <a href="https://heroku.com/deploy?template=https://github.com/QueenArzoo/GroupMusicBot">
+  <a href="https://heroku.com/deploy?template=https://github.com/QueenArzoo/VCPvtBot">
      <img height="30px" src="https://img.shields.io/badge/Deploy%20To%20Heroku-blueviolet?style=for-the-badge&logo=heroku">
   </a>
 
@@ -81,12 +71,5 @@ License -> https://github.com/TG-Musics/TG-VCBOT/blob/main/LICENSE
 
 ### Credits ❤
 
-- **[TG MUSICS](https://github.com/TG-Musics)** (Organization)
-- **Vivek** (Dev)
-- **Aswin Raj** (Helper)
-- **Jayant Hegde Kageri** (Dev)
-- **Fayas** (Helper)
-- **RabbitFoRed** (Dev)
-- **Itz-Fork** (Y)
-- **Uvindu Bro** (Helper)
-- **DaisyX**
+Dev @HEROGAMERS1 
+Github QueenArzoo  
