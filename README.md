@@ -75,7 +75,7 @@ License -> https://github.com/QueenArzoo/VCPvtBot/blob/main/LICENSE
 
 ### Session String 📼
 Make String Session Using This Bot [@PyroStringRobot](https://t.me/PyroStringRobot)
-[![Run on Repl.it](https://replit.com/@QueenArzoo/VCPlayBot)]
+Get STRING_NAME from here:  [![GenerateString](https://img.shields.io/badge/repl.it-generateString-yellowgreen)](https://replit.com/@QueenArzoo/VCPlayBot)
 
 
 ### Credits ❤
