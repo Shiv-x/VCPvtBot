@@ -17,9 +17,9 @@ Made with Python3
 
 - Official Bot :- [VCPvtBot](http://t.me/VCPvtBot)
 
-- Support Channel :- [Awesome Bot](http://t.me/LaylaList)
+- Support Channel :- [AwesomeBot](http://t.me/LaylaList)
 
-- Support Group :- [Awesome Support](http://t.me/AwesomeSupport)
+- Support Group :- [AwesomeSupport](http://t.me/AwesomeSupport)
 
 
 ### Features✨
@@ -81,5 +81,5 @@ Get String Session from here:  [![GenerateString](https://img.shields.io/badge/r
 
 ### Credits ❤
 
-- Dev [@HEROGAMERS1](https://t.me/HEROGAMERS1) Find me in telegram[Here](https://t.me/HEROGAMERS1)
+- Dev [@HEROGAMERS1](https://t.me/HEROGAMERS1) Find me in telegram [Here](https://t.me/HEROGAMERS1)
 - Github QueenArzoo  
