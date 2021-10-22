@@ -74,11 +74,11 @@ License -> https://github.com/QueenArzoo/VCPvtBot/blob/main/LICENSE
   </a>
 
 ### Session String 📼
-PyroStringRobot
-[![Run on Repl.it](https://replit.com/@QueenArzoo/VCPlayBot)
+Make String Session Using This Bot [@PyroStringRobot](https://t.me/PyroStringRobot)
+[![Run on Repl.it](https://replit.com/@QueenArzoo/VCPlayBot)]
 
 
 ### Credits ❤
 
-- Dev [@HEROGAMERS1 Find me in telegram](https://t.me/HEROGAMERS1)
+- Dev [@HEROGAMERS1](https://t.me/HEROGAMERS1) Find me in telegram[Here](https://t.me/HEROGAMERS1)
 - Github QueenArzoo  
