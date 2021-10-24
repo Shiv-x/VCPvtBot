@@ -3,10 +3,10 @@ import os
 from pyrogram import Client, filters
 from pyrogram.types import Message, InlineKeyboardMarkup, InlineKeyboardButton
 import config
-from config import BOT_USERNAME
+from config import BOT_USERNAME, UPDATES_CHANNEL
 from pyrogram.types import Message, InlineKeyboardMarkup, InlineKeyboardButton, Chat, CallbackQuery
 from pyrogram.errors.exceptions.bad_request_400 import UserNotParticipant, UsernameNotOccupied, ChatAdminRequired, PeerIdInvalid
-UPDATES_CHANNEL = C.UPDATES_CHANNEL
+UPDATES_CHANNEL = UPDATES_CHANNEL
 
 
 @Client.on_message(filters.incoming & filters.command(['start', 'start@VCPvtBot']))
