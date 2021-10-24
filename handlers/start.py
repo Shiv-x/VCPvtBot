@@ -63,7 +63,7 @@ def _start(client, message):
 	reply_markup=InlineKeyboardMarkup(
             [
                 [
-                    InlineKeyboardButton("➕ Add To Your Group ➕", url="t.me/VCPvtBot?startgroup=true")
+                    InlineKeyboardButton("➕ Add To Your Group ➕", url=f"t.me/VCPvtBot?startgroup=true")
                 ],
 		[
                     InlineKeyboardButton("Updates Channel", url="https://t.me/LaylaList"),
