@@ -39,7 +39,7 @@ def _start(client, message):
             return
         except Exception:
             client.send_message(message.chat.id,
-                text=tr.START_MSG.format(message.from_user.first_name, message.from_user.id),
+                text="**Hey {}**\n__I Can Play Music In Voice Chats of Telegram Groups**".format(message.from_user.first_name, message.from_user.id),
 	        reply_markup=InlineKeyboardMarkup(
                     [
                         [
