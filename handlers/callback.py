@@ -57,25 +57,17 @@ __× First Add Me To Your Group..
 @Client.on_callback_query(filters.regex("cbstart"))
 async def cbstart(_, query: CallbackQuery):
     await query.edit_message_text(
-        text="**Hello 👋🏻**\n\nI **Can Play Music In Voice Chats of Telegram Groups.**I Have A **lot of cool feature that will amaze You!**\n\n**Click /help For More Help On My Usage ❤**",
+        text="**Hey [{}](tg://user?id={})**\n__I Can Play Music In Voice Chats of Telegram Groups**".format(message.from_user.first_name, message.from_user.id),
         reply_markup=InlineKeyboardMarkup(
             [ 
                 [
-                    InlineKeyboardButton(
-                        "➕ Add me to your Group ➕", url=f"https://t.me/VCPvtBot?startgroup=true")
+                    InlineKeyboardButton("Updates Channel", url="https://t.me/LaylaList"),
+                    InlineKeyboardButton("Support Group", url="https://t.me/AwesomeSupport")
                 ],[
-                    InlineKeyboardButton(
-                         "📚 Commands", callback_data="cbcmds")
+                    InlineKeyboardButton("Source Code", url="https://github.com/QuennArzoo/VCPlayBot),
+                    InlineKeyboardButton("Devloper", url="https://t.me/HEROGAMERS1")	
                 ],[
-                    InlineKeyboardButton(
-                        "👥 Official Group", url=f"https://t.me/AwesomeSupport"
-                    ),
-                    InlineKeyboardButton(
-                        "📣 Official Channel", url=f"https://t.me/LaylaList")
-                ],[
-                    InlineKeyboardButton(
-                        "🧪 Source Code 🧪", url="https://github.com/QuennArzoo/VCPlayBot"
-                    )
+                    InlineKeyboardButton("📚 Commands", callback_data="cbcmds")
                 ]
             ]
         ),
