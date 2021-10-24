@@ -9,7 +9,7 @@ from pyrogram.errors.exceptions.bad_request_400 import UserNotParticipant, Usern
 UPDATES_CHANNEL = UPDATES_CHANNEL
 
 
-@Client.on_message(filters.incoming & filters.command(['start', 'start@{BOT_USERNAME}']))
+@Client.on_message(filters.incoming & filters.command(['start', 'start@{BOT_USERNAME}']) & filters.group & ~filters.channel)
 def _start(client, message):
     update_channel = UPDATES_CHANNEL
     if update_channel:
@@ -62,9 +62,6 @@ def _start(client, message):
         text="**Hey [{}](tg://user?id={})**\n__I Can Play Music In Voice Chats of Telegram Groups**".format(message.from_user.first_name, message.from_user.id),
 	reply_markup=InlineKeyboardMarkup(
             [
-                [
-                    InlineKeyboardButton("➕ Add To Your Group ➕", url=f"t.me/VCPvtBot?startgroup=true")
-                ],
 		[
                     InlineKeyboardButton("Updates Channel", url="https://t.me/LaylaList"),
                     InlineKeyboardButton("Support Group", url="https://t.me/AwesomeSupport")
