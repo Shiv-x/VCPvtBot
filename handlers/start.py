@@ -59,7 +59,7 @@ def _start(client, message):
         )
             return
     client.send_message(message.chat.id,
-        text="**Hey [{}](tg://user?id={})**\n__I **Can Play Music In Voice Chats of Telegram Groups.**.format(message.from_user.first_name, message.from_user.id),
+        text="**Hey [{}](tg://user?id={})**\n__I **Can Play Music In Voice Chats of Telegram Groups**.format(message.from_user.first_name, message.from_user.id),
 	reply_markup=InlineKeyboardMarkup(
             [
                 [
