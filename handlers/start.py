@@ -9,7 +9,7 @@ from pyrogram.errors.exceptions.bad_request_400 import UserNotParticipant, Usern
 UPDATES_CHANNEL = UPDATES_CHANNEL
 
 
-@Client.on_message(filters.incoming & filters.command(['start', 'start@{BOT_USERNAME}']) & filters.group & ~filters.channel)
+@Client.on_message(filters.incoming & filters.command(['start', 'start@{BOT_USERNAME}']))
 def _start(client, message):
     update_channel = UPDATES_CHANNEL
     if update_channel:
