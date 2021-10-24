@@ -64,7 +64,7 @@ async def cbstart(_, query: CallbackQuery):
                     InlineKeyboardButton("Updates Channel", url="https://t.me/LaylaList"),
                     InlineKeyboardButton("Support Group", url="https://t.me/AwesomeSupport")
                 ],[
-                    InlineKeyboardButton("Source Code", url="https://github.com/QuennArzoo/VCPlayBot),
+                    InlineKeyboardButton("Source Code", url="https://github.com/QuennArzoo/VCPlayBot"),
                     InlineKeyboardButton("Devloper", url="https://t.me/HEROGAMERS1")	
                 ],[
                     InlineKeyboardButton("📚 Commands", callback_data="cbcmds")
