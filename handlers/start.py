@@ -9,7 +9,7 @@ from pyrogram.errors.exceptions.bad_request_400 import UserNotParticipant, Usern
 UPDATES_CHANNEL = UPDATES_CHANNEL
 
 
-@Client.on_message(filters.incoming & filters.command(['start', 'start@VCPvtBot']))
+@Client.on_message(filters.incoming & filters.command(['start', 'start@{BOT_USERNAME}']))
 def _start(client, message):
     update_channel = UPDATES_CHANNEL
     if update_channel:
@@ -63,7 +63,7 @@ def _start(client, message):
 	reply_markup=InlineKeyboardMarkup(
             [
                 [
-                    InlineKeyboardButton("➕ Add To Your Group ➕", url=f"https://t.me/VCPvtBot?startgroup=true")
+                    InlineKeyboardButton("➕ Add To Your Group ➕", url="t.me/VCPvtBot?startgroup=true")
                 ],
 		[
                     InlineKeyboardButton("Updates Channel", url="https://t.me/LaylaList"),
