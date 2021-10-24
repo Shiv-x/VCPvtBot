@@ -57,7 +57,7 @@ __× First Add Me To Your Group..
 @Client.on_callback_query(filters.regex("cbstart"))
 async def cbstart(_, query: CallbackQuery):
     await query.edit_message_text(
-        text="**Hey [{}](tg://user?id={})**\n__I Can Play Music In Voice Chats of Telegram Groups**".format(message.from_user.first_name, message.from_user.id),
+        text="**Hey [{}](tg://user?id={})**\n__I Can Play Music In Voice Chats of Telegram Groups**".format(query.message.from_user.first_name, query.message.from_user.id),
         reply_markup=InlineKeyboardMarkup(
             [ 
                 [
